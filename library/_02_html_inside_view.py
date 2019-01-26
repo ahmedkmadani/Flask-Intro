@@ -1,21 +1,15 @@
-form flask import Flask 
+from flask import Flask
 
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 
-@app.route(/)
+@app.route('/')
 def hello_world():
 	html = """ 
 		<html>
 			<h1>Welcome to our Library!</h1>
 			{authors_ul}
-			# <ul>
-			# 	<li>Aron</li>
-			# 	<li>Ahmed</li>
-			# 	<li>Chevez</li>
-			# 	<li>Ibra</li>
-			# </ul>
 		</html>
 	"""
 	authors = ['Aron', 'Ahmed', 'Chevez', 'Ibra']
