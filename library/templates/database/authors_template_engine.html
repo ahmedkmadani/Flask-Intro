@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>This is the list of authors (with engine):</h1>
+	{% for author in authors %}
+		<li>{{author['id']}} : {{author['name']}}</li>
+	{% endfor %}
+</body>
+</html>
